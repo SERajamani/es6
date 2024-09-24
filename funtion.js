@@ -109,3 +109,62 @@ mani.studentDetails()
 // siva.studentDetails()
 
 
+// call back
+
+function chocolate(){
+    console.log("This is chocolate")
+}
+
+function shop(chocolate){
+    console.log("This is shop")
+    chocolate()
+}
+
+shop(chocolate)
+
+
+
+// promise
+
+var amazon = new Promise(
+    
+        function(resolve,reject){
+            var delivered =true
+            if(delivered==true){
+                resolve("Delivered ,pay the amount")
+            }
+            else {
+                reject("Not delivered,raise a compliant")
+            }
+        }
+    
+)
+amazon.then(function (msg){
+    console.log(msg)
+})
+
+.catch(function(err){
+    console.log(err)
+})
+
+
+// Await/Async
+
+var flipkart =new Promise(
+function (resolve){
+    setTimeout(
+        function(){
+            resolve('Delivered')
+        }
+    ,5000)
+}
+)
+
+async function waiting() {
+    var data=await flipkart
+    console.log(data)
+}
+
+waiting()
+
+console.log("Hello")
