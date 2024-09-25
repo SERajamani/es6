@@ -168,3 +168,74 @@ async function waiting() {
 waiting()
 
 console.log("Hello")
+
+// Map
+
+var num4=[1,2,3,4,5]
+
+var newarr=num4.map(function(data){
+    return data*2
+})
+
+console.log(newarr)
+
+// Task
+
+const numbers=[1,2,3,4,5]
+
+const number=numbers.map(function(value){
+    return value*value
+})
+
+console.log(number)
+
+// Js array Methods
+
+// For Each Methods
+
+var nuu=[10,20,30,40,50]
+
+nuu.forEach(function(data,index){
+    console.log(data +":"+index)
+})
+
+// Task
+
+var fruits =["orange","apple","banana","strawberry"]
+
+fruits.forEach(function(value,index){
+if(value=="apple"){
+    console.log(value+" is at position:"+index)
+}
+})
+
+
+// Filter
+
+var numm=[1,2,3,4,5,6,7,8]
+
+var evennum=numm.filter(function(data){
+    if(data %2==0){
+        return true
+    }
+    else {
+        return false
+    }
+})
+
+console.log(evennum)
+
+// Task
+
+var tasknum=[23,33,67,12,77]
+
+var ans=tasknum.filter(function(data){
+    if(data>50){
+        return true
+    }
+    else{
+        return false
+    }
+})
+
+console.log(ans)
